@@ -1,0 +1,65 @@
+/*
+  Name: Michael David Bradley
+  Date: October 17 2018
+  Section: CSE 154 AC
+
+  This is the index.css file for this project, used by my index.html page to provide a display
+  taken from the game Old School Runescape, @ https://oldschool.runescape.com with appropriate
+  styling to ensure my content fits the theme
+*/
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+body {
+  text-align: center;
+  font-family: "Press Start 2P", 'Courier New', Courier, monospace;
+  font-size: 10px;
+}
+
+button {
+  display: block;
+  text-align: center;
+  font-size: unset;
+  font-family: "Press Start 2P", 'Courier New', Courier, monospace;
+  border: unset;
+  color: black;
+  background-color: transparent;
+  margin: auto;
+  padding: 1px;
+}
+
+main {
+  background-image: url("images/osrs.png");
+  /* screenshot taken from in-game in Old School Runescape https://oldschool.runescape.com/ */
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+}
+
+#stable-text {
+  position: absolute;
+  top: 67%;
+  right: 50%;
+}
+
+#output-results {
+  position: absolute;
+  top: 87%;
+  right: 45%;
+}
+
+#output-score {
+  position: absolute;
+  top: 87%;
+  right: 47%;
+}
+
+button:hover {
+  color: white;
+}
+
+h4 {
+  font-size: unset;
+  font-weight: unset;
+  color: maroon;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+  Name: Michael David Bradley
+  Date: October 17 2018
+  Section: CSE 154 AC
+
+  This is the index.html file for this rock/paper/scissors javascript project. It is meant to almost
+  completely imitate the in-game UI for a game called Old School Runescape, 
+  @ https://oldschool.runescape.com, by mimicking how the game's chat windows work and display.
+
+  I actually just started playing this game again, and took a screenshot from the tutorial part of
+  the game.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>OSRS: The Rat Pits</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Rock Paper Scissors</h1>
+      <h2>Old School Runescape</h2>
+      <h3>Scene: The Rat Pits</h3>
+    </header>
+    <main>
+      <img alt="OSRS Screenshot" src="images/osrs.png" style="visibility: hidden"/>
+      <!--screenshot taken from in-game in Old School Runescape https://oldschool.runescape.com/ 
+      the image is marked hidden to fill the space while keeping the background image in use-->
+
+      <!--designates area for the buttons and the character's name; this text wont be updated-->
+      <section id="stable-text">
+
+        <h4>Combat Instructor</h4>
+
+        <section id="buttons">
+          <button id="rock">Rock</button>
+          <button id="paper">Paper</button> 
+          <button id="scissors">Scissors</button> 
+        </section>
+      </section>
+
+      <!--there are two types of elements that go here, output-score and output-results, each
+      requiring their unique styling due to the different sizes that result from the generated 
+      text. Only one element is visible as the other element replaces this one, and then gets
+      replaced in subsequent rounds of the game.-->
+      <section id="output-section">
+        <p id="output-score"></p>
+      </section>
+
+    </main>
+  </body>
+</html>
